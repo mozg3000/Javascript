@@ -118,11 +118,11 @@ function mathOperation(x, y, operation) {
 
     switch (operation) {
 
-        case plus: res = plus(x, y); break;
-        case minus: res = minus(x, y); break;
-        case multiply: res = multiply(x, y); break;
-        case divide: res = divide(x, y); break;
-        default: res = plus(x, y);
+        case plus: 		res = plus(x, y); break;
+        case minus: 	res = minus(x, y); break;
+        case multiply: 	res = multiply(x, y); break;
+        case divide: 	res = divide(x, y); break;
+        default: 		res = plus(x, y);
     }
 
     return res;
@@ -130,8 +130,8 @@ function mathOperation(x, y, operation) {
 
 // 7.
 
-null == 0 // хотя в числовом контексте null и приводится к 0, как например null+0==0 - true,
-		  // но здесь напрямую сравниваются значения, а на прямую, без приведения типов они не равны;
+null == 0 // При сравнении объекта (а null вроде типа Object) с чем-то, вызывается метод valueOf(), если он не определён, то toString(), 
+		  // соответственно видимо то, что возвращается не равно нулю,  хотя в числовом контексте null и приводится к 0, как например null+0==0 - true;
 
 // 8.
 
