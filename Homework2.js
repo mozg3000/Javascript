@@ -118,10 +118,10 @@ function mathOperation(x, y, operation) {
 
     switch (operation) {
 
-        case plus: 		res = plus(x, y); break;
-        case minus: 	res = minus(x, y); break;
-        case multiply: 	res = multiply(x, y); break;
-        case divide: 	res = divide(x, y); break;
+        case "plus": 		res = plus(x, y); break;
+        case "minus": 	res = minus(x, y); break;
+        case "multiply": 	res = multiply(x, y); break;
+        case "divide": 	res = divide(x, y); break;
         default: 		res = plus(x, y);
     }
 
