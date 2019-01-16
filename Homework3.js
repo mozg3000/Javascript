@@ -19,7 +19,7 @@
 //    flag = true;
 //}
 
-for (var i = 2, j = 2; i <= 100; i++ , j = 2) {
+for (var i = 3, j = 2; i <= 100; i += 2 , j = 2) {
     while (i % j != 0) {
         j++
     }
