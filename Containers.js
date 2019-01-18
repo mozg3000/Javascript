@@ -1,21 +1,27 @@
 // JavaScript source code
 
-
+var list = new List(1);
+list.push(2);
+list.push(3);
+list.print();
 
 function List(input){
 
     this.length = 0;
+    var visio = this;
 
     var node = function(v){
-        var value = null;
-        var next = null;
-        if (v) value = v;
+        this.value = null;
+        this.next = null;
+        if (v) this.value = v;
     }
     
     var head = null;
 
     if (input instanceof Array) {
-
+        for (var el in input) {
+            visio.push(el);
+        }
     } else if(input) {
         head = new node(input);
     }
@@ -23,13 +29,29 @@ function List(input){
     
 
     this.push = function(v) {
+
         if (!head) {
             head = new node(v);
         } else {
             p = head.next;
+            n = head;
             while (p) {
-
+                n = p;
+                p = p.next;
             }
+            n.next = new node(v);
         }
     };
+    this.print = function () {
+        if (head) {
+            var p = head.next;
+            var n = head;
+            while (p) {
+                console.log(n.value);
+                n = p;
+                p = p.next;
+            }
+            console.log(n.value);
+        }
+    }
 }
