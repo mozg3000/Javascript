@@ -1,6 +1,6 @@
 // JavaScript source code
 
-var list = new List(1);
+var list = new List(new Array(1, 2, 3, 4, 5));//new List(1);
 list.push(2);
 list.push(3);
 list.print();
@@ -18,13 +18,13 @@ function List(input){
     
     var head = null;
 
-    if (input instanceof Array) {
-        for (var el in input) {
-            visio.push(el);
-        }
-    } else if(input) {
-        head = new node(input);
-    }
+    //if (input instanceof Array) {
+    //    for (var el in input) {
+    //        visio.push(el);
+    //    }
+    //} else if(input) {
+    //    head = new node(input);
+    //}
         
     
 
@@ -53,5 +53,13 @@ function List(input){
             }
             console.log(n.value);
         }
+    }
+
+    if (input instanceof Array) {
+        for(var el in input) {
+            visio.push(input[el]);
+        }
+    } else if (input) {
+        head = new node(input);
     }
 }
