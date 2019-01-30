@@ -2,7 +2,7 @@
 
 
 // 1. 
-//  математическое решение
+//  РјР°С‚РµРјР°С‚РёС‡РµСЃРєРѕРµ СЂРµС€РµРЅРёРµ
 
 //function devisionBlender(number) {
 
@@ -15,14 +15,14 @@
 //    return o;
 //}
 
-// читерское решение, через строки
+// С‡РёС‚РµСЂСЃРєРѕРµ СЂРµС€РµРЅРёРµ, С‡РµСЂРµР· СЃС‚СЂРѕРєРё
 
 function devisionBlender(number) {
 
     var o = new Object();
     var str = String(number);
 
-    for (var i = 0, j = str.length; i < str.length; i++, j--) {
+    for (var i = 0, j = str.length-1; i < str.length; i++, j--) {
         o["10^" + j] = str[i];
     }
 
@@ -106,6 +106,7 @@ function Item(name, price, quantity) {
     item.product = Product(name, price);
     item.quantity = quantity;
 
+
     return item;
 }
 
@@ -119,4 +120,5 @@ var cart = new Array(
 );
 
 var total_price = cart.reduce((total, item) => total + item.sum(item.quantity), 0);
+
 console.log("Total price: " + total_price);
