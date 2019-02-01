@@ -5,15 +5,25 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FED7674D-3FB6-45D7-9687-D20A4A7D0441}"
 	ProjectSection(SolutionItems) = preProject
+		Containers.html = Containers.html
+		Containers.js = Containers.js
+		HTMLPage1.html = HTMLPage1.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hw", "hw", "{D2E74F7A-087D-4A8C-B38E-04D2B2CBBB7D}"
+	ProjectSection(SolutionItems) = preProject
 		Homework1.js = Homework1.js
 		Homework2.js = Homework2.js
-		Homework3.js = Homework3.js
-		HTMLPage1.html = HTMLPage1.html
+		Homework4.js = Homework4.js
+
 	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2E74F7A-087D-4A8C-B38E-04D2B2CBBB7D} = {FED7674D-3FB6-45D7-9687-D20A4A7D0441}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B099C64-9F62-4A98-9DAC-B6B18EF87E30}
