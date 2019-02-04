@@ -1,0 +1,33 @@
+.item {
+    display: flex;
+    width: 1204px;
+    margin: 0 auto;
+}
+                     .column {
+                         width: 25px;
+                         height: auto;
+                         border: 1px solid black;
+                         flex-grow: 1;
+                         flex-basis: 25px;
+                     }
+              .name {
+                  flex-grow: 3;
+              }
+.quantity
+
+    /*  div
+      border: 1px solid red
+      height: 100px
+      width: 100px
+      background-color: white */
+
+#cart {
+    border: 1px solid black;
+    height: 200px;
+    font-size: 20px;
+    background-color: white;
+}
+                                 .empty {
+                                     font-size: 20px;
+                                 }
+
