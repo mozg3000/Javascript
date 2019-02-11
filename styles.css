@@ -1,0 +1,21 @@
+.desk {
+  display: grid;
+  grid-template-columns: 50px repeat(8, 200px) 50px 50px;
+  grid-template-rows: 50px repeat(8, 200px) 50px;
+}
+.desk .field {
+  border: 1px solid darkblue;
+}
+.desk .field:nth-child(even) {
+  background-color: black;
+}
+.desk .title {
+  background-color: white;
+  text-align: center;
+  margin: auto 0;
+}
+.desk .rotate {
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=styles.css.map */

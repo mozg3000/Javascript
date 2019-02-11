@@ -5,9 +5,15 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FED7674D-3FB6-45D7-9687-D20A4A7D0441}"
 	ProjectSection(SolutionItems) = preProject
+		cart.css = cart.css
+		cart.html = cart.html
 		Homework1.js = Homework1.js
 		Homework2.js = Homework2.js
 		HTMLPage1.html = HTMLPage1.html
+		hw6_cart.js = hw6_cart.js
+		styles.css = styles.css
+		styles.css.map = styles.css.map
+		styles.sass = styles.sass
 	EndProjectSection
 EndProject
 Global
