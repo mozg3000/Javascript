@@ -1,0 +1,16 @@
+.desk
+  display: grid
+  grid-template-columns: 50px repeat(8,200px) 50px 50px
+  grid-template-rows: 50px repeat(8,200px) 50px
+
+  .field
+    border: 1px solid darkblue
+
+  .field:nth-child(even)
+    background-color: black
+  .title
+    background-color: white
+    text-align: center
+    margin: auto 0
+  .rotate
+    transform: rotate(180deg)
