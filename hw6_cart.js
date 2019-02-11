@@ -143,6 +143,7 @@ var view = {
     */
     render: function (_cart) {
 
+        this.clear();
         if (_cart && _cart.length > 0) {
 
             this.clear();
