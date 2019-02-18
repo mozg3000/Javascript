@@ -18,8 +18,37 @@
    
 </div>
 
-<div id = "cart">
+<div class="cart_wrapper">
+    <h3>
+        Состав корзины
+    </h3>
+    <div id = "cart">
 
+    </div>
+    <input type="button" class="cart2delivery" value="Далее">
+</div>
+<div class="delivery_wrapper">
+    <h3>
+        Адрес доставки
+    </h3>
+    <div id = "delivery" class="none">
+        <form action="#">
+            <input type="text" name="city"><br>
+            <input type="text" name="street"><br>
+            <input type="text" name="building"><br>
+            <input type="text" name="zip"><br>
+            <input type="button" class="delivary2comments none" value="Далее">
+        </form>
+    </div>
+</div>
+<div class="delivery_wrapper">
+    <h3>
+        Комментарий
+    </h3>
+    <div id = "order" class="none">
+        <input type="textBox" name="comment"><br>
+    </div>
+    <input type="button" class="cart_order none" value="Далее">
 </div>
 <script src="hw6_cart.js"></script>
 </body>
