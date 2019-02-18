@@ -99,6 +99,9 @@ var model = {
             this.cart.splice(productIndex, 1);
         }
     },
+    /*
+    Изменение количества
+     */
     changeQuantity: function(_item2change, _new_quantity){
 
         var productIndex = this.cart.findIndex((x)=>x.product.name==_item2change);
@@ -245,11 +248,17 @@ var view = {
 */
 var controller = {
 
+    /*
+    Добавлени товара в корзину
+     */
     addProduct: function (e) {
 
         model.add(e.target.id - 1);
         view.render(model.cart);
     },
+    /*
+    Удаление определённого товара из корзины
+     */
     deleteProduct: function (e) {
 
         if(e.target.className == "delete_cart_item"){
@@ -261,6 +270,9 @@ var controller = {
         }
         e.preventDefault();
     },
+    /*
+    Изменение количества определённого товара в корзине
+    */
     inputQuantityChange: function(e){
 
         var new_quantity = e.target.value;
